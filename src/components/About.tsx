@@ -1,0 +1,75 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Code, Coffee, Lightbulb } from "lucide-react";
+
+export function About() {
+  const highlights = [
+    {
+      icon: Code,
+      title: "Clean Code Advocate",
+      description: "Passionate about writing maintainable, scalable code that stands the test of time."
+    },
+    {
+      icon: Lightbulb,
+      title: "Problem Solver",
+      description: "I love tackling complex challenges and finding innovative solutions."
+    },
+    {
+      icon: Coffee,
+      title: "Continuous Learner",
+      description: "Always staying up-to-date with the latest technologies and best practices."
+    }
+  ];
+
+  return (
+    <section id="about" className="py-20 bg-background-secondary">
+      <div className="container mx-auto px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+              About Me
+            </h2>
+            <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+              <p className="text-lg text-foreground-muted leading-relaxed mb-6">
+                I'm a passionate full-stack developer with over 5 years of experience building 
+                web applications that make a difference. My journey started with curiosity about 
+                how websites work, and it's evolved into a career focused on creating exceptional 
+                user experiences.
+              </p>
+              <p className="text-lg text-foreground-muted leading-relaxed mb-6">
+                When I'm not coding, you'll find me exploring new technologies, contributing to 
+                open-source projects, or enjoying a good cup of coffee while reading about the 
+                latest industry trends.
+              </p>
+              <p className="text-lg text-foreground-muted leading-relaxed">
+                I believe great software is built by teams that communicate well, think critically, 
+                and never stop learning. Let's build something amazing together!
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              {highlights.map((highlight, index) => (
+                <Card key={index} className="shadow-card hover:shadow-card-hover transition-smooth">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="bg-primary-muted rounded-lg p-3">
+                        <highlight.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-2">{highlight.title}</h3>
+                        <p className="text-foreground-muted">{highlight.description}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
