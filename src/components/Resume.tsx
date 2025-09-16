@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, FileText, Award, GraduationCap } from "lucide-react";
+import { Download, FileText, Award, GraduationCap, Eye, X } from "lucide-react";
 
 export function Resume() {
+  const [showPreview, setShowPreview] = useState(false);
   const education = [
     {
       degree: "Master of Computer Science in Software Engineering",
@@ -60,9 +62,9 @@ export function Resume() {
               size="lg" 
               variant="secondary"
               className="transition-smooth hover:scale-105"
-              onClick={() => window.open('/Taha_Khan_resume.pdf', '_blank')}
+              onClick={() => setShowPreview(true)}
             >
-              <FileText className="h-5 w-5 mr-2" />
+              <Eye className="h-5 w-5 mr-2" />
               Preview Resume
             </Button>
           </div>
@@ -149,6 +151,31 @@ export function Resume() {
           </div>
         </div>
       </div>
+
+      {/* Resume Preview Modal */}
+      {showPreview && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-background rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col">
+            <div className="flex items-center justify-between p-4 border-b">
+              <h3 className="text-lg font-semibold">Resume Preview</h3>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowPreview(false)}
+              >
+                <X className="h-4 w-4" />
+              </Button>
+            </div>
+            <div className="flex-1 overflow-hidden">
+              <iframe 
+                src="/Taha_Khan_resume.pdf" 
+                className="w-full h-full"
+                title="Resume Preview"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

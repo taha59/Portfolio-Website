@@ -69,13 +69,13 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/alexjohnson",
+      href: "https://github.com/taha59",
       color: "hover:text-gray-600"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/alexjohnson",
+      href: "https://www.linkedin.com/in/taha-khan-/",
       color: "hover:text-blue-600"
     },
     {

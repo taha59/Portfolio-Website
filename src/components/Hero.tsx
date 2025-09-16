@@ -44,13 +44,28 @@ export function Hero() {
           </div>
 
           <div className="flex justify-center space-x-6 mb-16">
-            <Button variant="secondary" size="sm" className="bg-white/10 text-white border-white/20 hover:bg-white/20 rounded-full p-3">
+            <Button 
+              variant="secondary" 
+              size="sm" 
+              className="bg-white/10 text-white border-white/20 hover:bg-white/20 rounded-full p-3"
+              onClick={() => window.open('https://github.com/taha59', '_blank')}
+            >
               <Github className="h-5 w-5" />
             </Button>
-            <Button variant="secondary" size="sm" className="bg-white/10 text-white border-white/20 hover:bg-white/20 rounded-full p-3">
+            <Button 
+              variant="secondary" 
+              size="sm" 
+              className="bg-white/10 text-white border-white/20 hover:bg-white/20 rounded-full p-3"
+              onClick={() => window.open('https://www.linkedin.com/in/taha-khan-/', '_blank')}
+            >
               <Linkedin className="h-5 w-5" />
             </Button>
-            <Button variant="secondary" size="sm" className="bg-white/10 text-white border-white/20 hover:bg-white/20 rounded-full p-3">
+            <Button 
+              variant="secondary" 
+              size="sm" 
+              className="bg-white/10 text-white border-white/20 hover:bg-white/20 rounded-full p-3"
+              onClick={() => window.open('mailto:tkhan7@vols.utk.edu', '_blank')}
+            >
               <Mail className="h-5 w-5" />
             </Button>
           </div>
