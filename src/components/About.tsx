@@ -34,19 +34,21 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-                I'm a passionate full-stack developer with over 5 years of experience building 
-                web applications that make a difference. My journey started with curiosity about 
-                how websites work, and it's evolved into a career focused on creating exceptional 
-                user experiences.
+                I'm an entry-level full-stack developer currently pursuing my Master's in Computer Science 
+                in Software Engineering at the University of Tennessee with a perfect 4.0 GPA. My passion 
+                lies in building cloud-based applications, AI-powered tools, and scalable backend systems.
               </p>
               <p className="text-lg text-foreground-muted leading-relaxed mb-6">
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or enjoying a good cup of coffee while reading about the 
-                latest industry trends.
+                I specialize in Java, Python, React, Spring Boot, and AWS technologies. What excites me 
+                most about development is the ability to integrate AI and machine learning into practical 
+                applications that solve real business problems, like my timecard automation project that 
+                improved payroll efficiency by 20%.
               </p>
               <p className="text-lg text-foreground-muted leading-relaxed">
-                I believe great software is built by teams that communicate well, think critically, 
-                and never stop learning. Let's build something amazing together!
+                With experience in Agile methodologies and a proven ability to learn quickly and adapt 
+                to new technologies, I'm passionate about collaborative development and building solutions 
+                that make a meaningful impact. I'm AWS Certified and always eager to explore emerging 
+                technologies in cloud computing and artificial intelligence.
               </p>
             </div>
 

@@ -26,12 +26,12 @@ export function Hero() {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Alex Johnson</span>
+            Hi, I'm <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Taha Khan</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-4 text-blue-100">Full-Stack Developer</p>
+          <p className="text-xl md:text-2xl mb-4 text-blue-100">Full-Stack Developer & Software Engineer</p>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-blue-50 leading-relaxed">
-            Passionate about crafting beautiful, scalable web applications with modern technologies.
-            I turn ideas into digital reality.
+            Building cloud-based applications, AI-powered tools, and scalable backend systems. 
+            Currently pursuing Master's in Computer Science with 4.0 GPA.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-12">

@@ -9,30 +9,30 @@ import project3Image from "@/assets/project3.jpg";
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with advanced product filtering, secure payments, and admin dashboard. Built with modern technologies for optimal performance and user experience.",
+      title: "AI Timecard Calculator",
+      description: "A full-stack timecard application with Flask REST API and React/TypeScript frontend. Features AI-powered parsing of handwritten timecards using Groq AI, automated calculations, and human-in-the-loop review workflow for payroll processing.",
       image: project1Image,
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-      liveUrl: "https://example-ecommerce.com",
-      githubUrl: "https://github.com/alexjohnson/ecommerce-platform",
+      technologies: ["Flask", "React", "TypeScript", "Groq AI", "Python"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/taha59/AI-Timecard-Calculator",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Designed for productivity and ease of use.",
+      title: "Video Streaming Webapp",
+      description: "A comprehensive video streaming platform built with Spring Boot backend and Angular frontend. Features secure authentication via Auth0, AWS S3 integration for video storage, and an AI chatbot using Llama AI and Amazon Transcribe.",
       image: project2Image,
-      technologies: ["Vue.js", "Express", "MongoDB", "Socket.io", "Docker"],
-      liveUrl: "https://example-taskmanager.com",
-      githubUrl: "https://github.com/alexjohnson/task-manager",
+      technologies: ["Spring Boot", "Angular", "Auth0", "AWS S3", "MongoDB", "Llama AI"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/taha59/Video-Streaming-app",
       featured: true
     },
     {
-      title: "Weather Forecast App",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics. Optimized for both web and mobile devices.",
+      title: "GrAPPA Rebuild (Senior Design)",
+      description: "Upgraded and rigorously tested 5 GrAPPA bioinformatics tools in a Docker environment. Enhanced Python and R scripts for compatibility, implemented graph visualization with Graphviz, and created comprehensive documentation.",
       image: project3Image,
-      technologies: ["React Native", "TypeScript", "Redux", "OpenWeather API"],
-      liveUrl: "https://example-weather.com",
-      githubUrl: "https://github.com/alexjohnson/weather-app",
+      technologies: ["Docker", "Python", "R", "Graphviz", "Bioinformatics"],
+      liveUrl: "#",
+      githubUrl: "#",
       featured: false
     }
   ];

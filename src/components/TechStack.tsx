@@ -13,46 +13,46 @@ import {
 export function TechStack() {
   const technologies = [
     {
-      category: "Frontend",
-      icon: Globe,
+      category: "Languages",
+      icon: Code2,
       color: "text-blue-600",
       bgColor: "bg-blue-100 dark:bg-blue-900/20",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"]
+      skills: ["Java", "Python", "JavaScript", "TypeScript", "C++", "C", "SQL"]
     },
     {
-      category: "Backend",
-      icon: Database,
+      category: "Frontend Frameworks",
+      icon: Globe,
       color: "text-green-600",
       bgColor: "bg-green-100 dark:bg-green-900/20",
-      skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Express"]
+      skills: ["React", "Angular", "Vue.js", "HTML5", "CSS3"]
     },
     {
-      category: "Mobile",
-      icon: Smartphone,
+      category: "Backend & APIs",
+      icon: Database,
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
-      skills: ["React Native", "Flutter", "iOS", "Android", "Expo"]
+      skills: ["Spring Boot", "Flask", "RESTful APIs", "GraphQL", "Auth0"]
     },
     {
-      category: "DevOps & Cloud",
+      category: "Cloud & DevOps",
       icon: Cloud,
       color: "text-orange-600",
       bgColor: "bg-orange-100 dark:bg-orange-900/20",
-      skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+      skills: ["AWS", "Docker", "EC2", "S3", "CloudWatch", "Lambda"]
     },
     {
-      category: "Tools & Version Control",
+      category: "Tools & Databases",
       icon: GitBranch,
       color: "text-red-600",
       bgColor: "bg-red-100 dark:bg-red-900/20",
-      skills: ["Git", "GitHub", "VS Code", "Figma", "Postman"]
+      skills: ["Git", "Eclipse", "MongoDB", "MySQL", "Postman"]
     },
     {
-      category: "Languages",
-      icon: Code2,
+      category: "AI & Methodologies",
+      icon: Terminal,
       color: "text-indigo-600",
       bgColor: "bg-indigo-100 dark:bg-indigo-900/20",
-      skills: ["JavaScript", "TypeScript", "Python", "Go", "Rust"]
+      skills: ["OpenAI", "Groq AI", "Amazon Transcribe", "Agile", "OOP"]
     }
   ];
 

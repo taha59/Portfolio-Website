@@ -48,19 +48,19 @@ export function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "alex.johnson@email.com",
-      href: "mailto:alex.johnson@email.com"
+      value: "tkhan7@vols.utk.edu",
+      href: "mailto:tkhan7@vols.utk.edu"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "(865) 604-4645",
+      href: "tel:+18656044645"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Tennessee, USA",
       href: "https://maps.google.com"
     }
   ];

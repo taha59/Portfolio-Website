@@ -5,56 +5,43 @@ import { Calendar, MapPin } from "lucide-react";
 export function Experience() {
   const experiences = [
     {
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      description: [
-        "Led development of a microservices architecture serving 100K+ daily users",
-        "Reduced application load time by 40% through performance optimization",
-        "Mentored junior developers and established coding standards",
-        "Built CI/CD pipelines reducing deployment time from hours to minutes"
-      ],
-      technologies: ["React", "Node.js", "AWS", "PostgreSQL", "Docker"]
-    },
-    {
-      title: "Full-Stack Developer",
-      company: "StartupXYZ",
-      location: "Austin, TX",
-      duration: "2020 - 2022",
-      description: [
-        "Developed MVP from concept to launch in 6 months",
-        "Implemented real-time features using WebSocket technology",
-        "Collaborated with design team to create pixel-perfect interfaces",
-        "Increased user engagement by 60% through A/B testing"
-      ],
-      technologies: ["Vue.js", "Express", "MongoDB", "Redis", "Stripe"]
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency Pro",
+      title: "Software Developer (Freelance)",
+      company: "Sneaky Squirrel (Retail)",
       location: "Remote",
-      duration: "2019 - 2020",
+      duration: "May 2024 – Aug 2024",
       description: [
-        "Built responsive websites for 20+ clients across various industries",
-        "Improved website accessibility scores by implementing WCAG guidelines",
-        "Integrated third-party APIs and payment gateways",
-        "Optimized websites for SEO resulting in 30% increase in organic traffic"
+        "Built and deployed a full-stack timecard application (Flask REST API + React/TypeScript) to digitize paper-based payroll tracking for a retail business",
+        "Integrated Groq AI to parse scanned handwritten timecards into structured JSON, eliminating manual entry of shift data",
+        "Automated daily/weekly hour calculations, replacing manual tallying and improving payroll preparation speed by ~20%",
+        "Designed a human-in-the-loop review workflow where staff could edit parsed entries and trigger instant recalculations"
       ],
-      technologies: ["JavaScript", "React", "SCSS", "WordPress", "PHP"]
+      technologies: ["Flask", "React", "TypeScript", "Groq AI", "Python"]
     },
     {
-      title: "Junior Web Developer",
-      company: "Local Web Solutions",
-      location: "Denver, CO",
-      duration: "2018 - 2019",
+      title: "Software Engineer Intern",
+      company: "Kindness Matters",
+      location: "Remote",
+      duration: "June 2024 – Aug 2024",
       description: [
-        "Assisted in developing e-commerce platforms for small businesses",
-        "Fixed bugs and implemented new features in existing applications",
-        "Learned version control and collaborative development practices",
-        "Participated in code reviews and agile development processes"
+        "Implemented monitoring with CloudWatch alarms and SNS to detect EC2 CPU spikes",
+        "Built Lambda integration to trigger Slack alerts when thresholds were exceeded",
+        "Improved system visibility and enabled prompt response to performance incidents",
+        "Enhanced AWS infrastructure monitoring and alerting systems"
       ],
-      technologies: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"]
+      technologies: ["AWS", "CloudWatch", "Lambda", "SNS", "Slack API"]
+    },
+    {
+      title: "Software Engineer Intern",
+      company: "For Students by Students",
+      location: "Remote",
+      duration: "Jan 2024 – April 2024",
+      description: [
+        "Developed and deployed an AI-powered tutoring chatbot using OpenAI's ChatGPT, integrated into an LMS discussion board",
+        "Designed GraphQL APIs with a Spring Boot (Java) backend on AWS to enable seamless communication with a Vue.js frontend",
+        "Implemented PII detection and a profanity filter to secure chat interactions",
+        "Collaborated within a Scrum team and actively contributed to Sprint Planning, Daily Stand-ups, and Sprint Demos"
+      ],
+      technologies: ["Spring Boot", "Java", "Vue.js", "GraphQL", "OpenAI", "AWS"]
     }
   ];
 

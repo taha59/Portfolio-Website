@@ -5,26 +5,30 @@ import { Download, FileText, Award, GraduationCap } from "lucide-react";
 export function Resume() {
   const education = [
     {
+      degree: "Master of Computer Science in Software Engineering",
+      school: "University of Tennessee",
+      year: "Expected Dec 2026",
+      gpa: "4.0/4.0"
+    },
+    {
       degree: "Bachelor of Science in Computer Science",
-      school: "University of Technology",
-      year: "2014 - 2018",
-      gpa: "3.8/4.0"
+      school: "University of Tennessee",
+      year: "May 2023",
+      gpa: "3.2/4.0"
     }
   ];
 
   const certifications = [
-    "AWS Certified Solutions Architect",
-    "Google Cloud Professional Developer",
-    "MongoDB Certified Developer",
-    "React Developer Certification"
+    "AWS Certified Solutions Architect – Associate (Expires: Jan 2027)"
   ];
 
   const skills = {
-    "Programming Languages": ["JavaScript", "TypeScript", "Python", "Go", "Java"],
-    "Frontend": ["React", "Vue.js", "Next.js", "Tailwind CSS", "SCSS"],
-    "Backend": ["Node.js", "Express", "Django", "FastAPI", "GraphQL"],
-    "Databases": ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
-    "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+    "Programming Languages": ["Java", "Python", "JavaScript", "TypeScript", "C++", "C", "SQL"],
+    "Frontend Frameworks": ["React", "Angular", "Vue.js"],
+    "Backend & APIs": ["Spring Boot", "Flask", "RESTful APIs", "GraphQL", "Auth0"],
+    "Cloud & DevOps": ["AWS", "Docker", "EC2", "S3", "CloudWatch", "Lambda"],
+    "Tools & Databases": ["Git", "Eclipse", "MongoDB", "MySQL"],
+    "AI & Methodologies": ["OpenAI", "Groq AI", "Amazon Transcribe", "Agile", "OOP"]
   };
 
   return (
@@ -38,10 +42,30 @@ export function Resume() {
           <p className="text-xl text-foreground-muted max-w-2xl mx-auto mb-8">
             A comprehensive overview of my qualifications and achievements
           </p>
-          <Button size="lg" className="transition-smooth hover:scale-105">
-            <Download className="h-5 w-5 mr-2" />
-            Download Resume PDF
-          </Button>
+          <div className="flex gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="transition-smooth hover:scale-105"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/Taha_Khan_resume.pdf';
+                link.download = 'Taha_Khan_resume.pdf';
+                link.click();
+              }}
+            >
+              <Download className="h-5 w-5 mr-2" />
+              Download Resume PDF
+            </Button>
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="transition-smooth hover:scale-105"
+              onClick={() => window.open('/Taha_Khan_resume.pdf', '_blank')}
+            >
+              <FileText className="h-5 w-5 mr-2" />
+              Preview Resume
+            </Button>
+          </div>
         </div>
 
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8">
@@ -121,7 +145,7 @@ export function Resume() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-2 text-foreground-muted">
             <FileText className="h-5 w-5" />
-            <span>Last updated: December 2024</span>
+            <span>Last updated: January 2025</span>
           </div>
         </div>
       </div>
