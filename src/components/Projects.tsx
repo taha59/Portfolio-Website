@@ -2,18 +2,17 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import project1Image from "@/assets/project1.jpg";
-import project2Image from "@/assets/project2.jpg";
-import project3Image from "@/assets/project3.jpg";
+import project1Image from "@/assets/project1.png";
+import project2Image from "@/assets/project2.png";
 
 export function Projects() {
   const projects = [
     {
       title: "AI Timecard Calculator",
-      description: "A full-stack timecard application with Flask REST API and React/TypeScript frontend. Features AI-powered parsing of handwritten timecards using Groq AI, automated calculations, and human-in-the-loop review workflow for payroll processing.",
+      description: "A full-stack timecard application with Flask REST API and React/TypeScript frontend. Features AI-powered parsing of handwritten timecards using Llama AI, automated calculations, and human-in-the-loop review workflow for payroll processing.",
       image: project1Image,
-      technologies: ["Flask", "React", "TypeScript", "Groq AI", "Python"],
-      liveUrl: "#",
+      technologies: ["Flask", "React", "TypeScript", "Llama AI", "Python"],
+      liveUrl: "https://timecard-calculator-nine.vercel.app",
       githubUrl: "https://github.com/taha59/AI-Timecard-Calculator",
       featured: true
     },
@@ -22,19 +21,10 @@ export function Projects() {
       description: "A comprehensive video streaming platform built with Spring Boot backend and Angular frontend. Features secure authentication via Auth0, AWS S3 integration for video storage, and an AI chatbot using Llama AI and Amazon Transcribe.",
       image: project2Image,
       technologies: ["Spring Boot", "Angular", "Auth0", "AWS S3", "MongoDB", "Llama AI"],
-      liveUrl: "#",
+      liveUrl: "",
       githubUrl: "https://github.com/taha59/Video-Streaming-app",
       featured: true
     },
-    {
-      title: "GrAPPA Rebuild (Senior Design)",
-      description: "Upgraded and rigorously tested 5 GrAPPA bioinformatics tools in a Docker environment. Enhanced Python and R scripts for compatibility, implemented graph visualization with Graphviz, and created comprehensive documentation.",
-      image: project3Image,
-      technologies: ["Docker", "Python", "R", "Graphviz", "Bioinformatics"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    }
   ];
 
   return (
@@ -50,7 +40,9 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 justify-items-center">
+
+
           {projects.map((project, index) => (
             <Card 
               key={index} 
@@ -72,10 +64,18 @@ export function Projects() {
                     {project.title}
                   </h3>
                   <div className="flex space-x-2">
-                    <Button size="sm" variant="secondary" className="p-2">
+                    <Button 
+                    size="sm" 
+                    variant="secondary" 
+                    className="p-2"
+                    onClick={() => window.open(project.liveUrl, "_blank")}>
                       <ExternalLink className="h-4 w-4" />
                     </Button>
-                    <Button size="sm" variant="secondary" className="p-2">
+                    <Button size="sm" 
+                    variant="secondary" 
+                    className="p-2"
+                    onClick={() => window.open(project.githubUrl, "_blank")}
+                    >
                       <Github className="h-4 w-4" />
                     </Button>
                   </div>
@@ -95,27 +95,12 @@ export function Projects() {
                   ))}
                 </div>
 
-                <div className="flex space-x-3">
-                  <Button className="flex-1">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Button>
-                  <Button variant="secondary" className="flex-1">
-                    <Github className="h-4 w-4 mr-2" />
-                    Source Code
-                  </Button>
-                </div>
+  
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="secondary" size="lg" className="transition-smooth hover:scale-105">
-            <Github className="h-5 w-5 mr-2" />
-            View All Projects on GitHub
-          </Button>
-        </div>
       </div>
     </section>
   );

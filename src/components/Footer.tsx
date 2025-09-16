@@ -11,9 +11,6 @@ export function Footer() {
             <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
               Taha Khan
             </h3>
-            <p className="text-foreground-muted">
-              Full-Stack Developer passionate about creating amazing web experiences
-            </p>
           </div>
 
           <div className="flex items-center space-x-6">
@@ -43,12 +40,6 @@ export function Footer() {
               <Mail className="h-6 w-6" />
             </a>
           </div>
-        </div>
-
-        <div className="mt-8 pt-8 border-t border-border text-center">
-          <p className="text-foreground-muted flex items-center justify-center">
-            © {currentYear} Taha Khan.
-          </p>
         </div>
       </div>
     </footer>

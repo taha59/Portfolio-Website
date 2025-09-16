@@ -31,11 +31,10 @@ export function About() {
             <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
+            <div className="text-center">
               <p className="text-lg text-foreground-muted leading-relaxed mb-6">
                 I'm an entry-level full-stack developer currently pursuing my Master's in Computer Science 
-                in Software Engineering at the University of Tennessee with a perfect 4.0 GPA. My passion 
+                in Software Engineering at the University of Tennessee. My passion 
                 lies in building cloud-based applications, AI-powered tools, and scalable backend systems.
               </p>
               <p className="text-lg text-foreground-muted leading-relaxed mb-6">
@@ -44,25 +43,6 @@ export function About() {
                 applications that solve real business problems.
               </p>
             </div>
-
-            <div className="space-y-6">
-              {highlights.map((highlight, index) => (
-                <Card key={index} className="shadow-card hover:shadow-card-hover transition-smooth">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <div className="bg-primary-muted rounded-lg p-3">
-                        <highlight.icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-lg mb-2">{highlight.title}</h3>
-                        <p className="text-foreground-muted">{highlight.description}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

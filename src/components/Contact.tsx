@@ -4,10 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 export function Contact() {
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID as string;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID as string;
+  const PUBLIC_KEY  = import.meta.env.VITE_PUBLIC_KEY as string;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,24 +30,40 @@ export function Contact() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
-      });
-    }, 1000);
-  };
+  try {
+    await emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        title: formData.subject,
+        message: formData.message,
+      },
+      { publicKey: PUBLIC_KEY }
+    );
+
+    toast({
+      title: "Message sent successfully!",
+      description: "Thank you for reaching out. I'll get back to you soon.",
+    });
+
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  } catch (err) {
+    console.error(err);
+    toast({
+      title: "Something went wrong",
+      description: "Your message couldn't be sent. Please try again.",
+      variant: "destructive",
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   const contactInfo = [
     {
@@ -85,11 +106,13 @@ export function Contact() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Let's Work Together
+            Let's Connect About Opportunities
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto mb-8"></div>
           <p className="text-xl text-foreground-muted max-w-2xl mx-auto">
-            Have a project in mind or just want to chat? I'd love to hear from you!
+            I'm actively open to new opportunities in software engineering. 
+            Whether you're a recruiter, hiring manager, or collaborator, feel free to reach out.
+            I'd be glad to discuss how my skills can contribute to your team.
           </p>
         </div>
 

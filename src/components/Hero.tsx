@@ -28,20 +28,11 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">Taha Khan</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-4 text-blue-100">Full-Stack Developer & Software Engineer</p>
+          <p className="text-xl md:text-2xl mb-4 text-blue-100">Software Engineer</p>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-blue-50 leading-relaxed">
             Building cloud-based applications, AI-powered tools, and scalable backend systems. 
-            Currently pursuing Master's in Computer Science with 4.0 GPA.
+            Currently pursuing Master's in Computer Science.
           </p>
-
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <Button size="lg" className="bg-white text-primary hover:bg-blue-50 transition-smooth">
-              View My Work
-            </Button>
-            <Button variant="secondary" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20 transition-smooth">
-              Download Resume
-            </Button>
-          </div>
 
           <div className="flex justify-center space-x-6 mb-16">
             <Button 

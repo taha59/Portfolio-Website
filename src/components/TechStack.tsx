@@ -3,11 +3,9 @@ import {
   Code2, 
   Database, 
   Globe, 
-  Smartphone, 
   Cloud, 
   GitBranch,
   Terminal,
-  Palette 
 } from "lucide-react";
 
 export function TechStack() {
@@ -24,14 +22,14 @@ export function TechStack() {
       icon: Globe,
       color: "text-green-600",
       bgColor: "bg-green-100 dark:bg-green-900/20",
-      skills: ["React", "Angular", "Vue.js", "HTML5", "CSS3"]
+      skills: ["React", "Angular"]
     },
     {
       category: "Backend & APIs",
       icon: Database,
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/20",
-      skills: ["Spring Boot", "Flask", "RESTful APIs", "GraphQL", "Auth0"]
+      skills: ["Spring Boot", "Flask", "GraphQL"]
     },
     {
       category: "Cloud & DevOps",
@@ -45,14 +43,14 @@ export function TechStack() {
       icon: GitBranch,
       color: "text-red-600",
       bgColor: "bg-red-100 dark:bg-red-900/20",
-      skills: ["Git", "Eclipse", "MongoDB", "MySQL", "Postman"]
+      skills: ["Git", "PostgreSQL", "MongoDB", "MySQL", "Postman"]
     },
     {
       category: "AI & Methodologies",
       icon: Terminal,
       color: "text-indigo-600",
       bgColor: "bg-indigo-100 dark:bg-indigo-900/20",
-      skills: ["OpenAI", "Groq AI", "Amazon Transcribe", "Agile", "OOP"]
+      skills: ["OpenAI", "LlamaAI", "Amazon Transcribe", "Agile"]
     }
   ];
 

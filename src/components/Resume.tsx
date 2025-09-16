@@ -26,11 +26,11 @@ export function Resume() {
 
   const skills = {
     "Programming Languages": ["Java", "Python", "JavaScript", "TypeScript", "C++", "C", "SQL"],
-    "Frontend Frameworks": ["React", "Angular", "Vue.js"],
-    "Backend & APIs": ["Spring Boot", "Flask", "RESTful APIs", "GraphQL", "Auth0"],
+    "Frontend Frameworks": ["React", "Angular"],
+    "Backend & APIs": ["Spring Boot", "Flask", "GraphQL"],
     "Cloud & DevOps": ["AWS", "Docker", "EC2", "S3", "CloudWatch", "Lambda"],
-    "Tools & Databases": ["Git", "Eclipse", "MongoDB", "MySQL"],
-    "AI & Methodologies": ["OpenAI", "Groq AI", "Amazon Transcribe", "Agile", "OOP"]
+    "Tools & Databases": ["Git", "PostgreSQL", "MongoDB", "MySQL"],
+    "AI & Methodologies": ["OpenAI", "LlamaAI", "Amazon Transcribe", "Agile"]
   };
 
   return (
@@ -147,35 +147,36 @@ export function Resume() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-2 text-foreground-muted">
             <FileText className="h-5 w-5" />
-            <span>Last updated: January 2025</span>
+            <span>Last updated: September 2025</span>
           </div>
         </div>
       </div>
 
       {/* Resume Preview Modal */}
       {showPreview && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-background rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] flex flex-col">
-            <div className="flex items-center justify-between p-4 border-b">
-              <h3 className="text-lg font-semibold">Resume Preview</h3>
-              <Button 
-                variant="ghost" 
-                size="sm"
-                onClick={() => setShowPreview(false)}
-              >
-                <X className="h-4 w-4" />
-              </Button>
-            </div>
-            <div className="flex-1 overflow-hidden">
-              <iframe 
-                src="/Taha_Khan_resume.pdf" 
-                className="w-full h-full"
-                title="Resume Preview"
-              />
-            </div>
-          </div>
-        </div>
-      )}
+  <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+    <div className="bg-background rounded-lg shadow-xl w-screen h-screen flex flex-col">
+      <div className="flex items-center justify-between p-4 border-b">
+        <h3 className="text-lg font-semibold">Resume Preview</h3>
+        <Button 
+          variant="ghost" 
+          size="sm"
+          onClick={() => setShowPreview(false)}
+        >
+          <X className="h-4 w-4" />
+        </Button>
+      </div>
+      <div className="flex-1">
+        <iframe 
+          src="/Taha_Khan_resume.pdf" 
+          className="w-full h-full"
+          title="Resume Preview"
+        />
+      </div>
+    </div>
+  </div>
+)}
+
     </section>
   );
 }

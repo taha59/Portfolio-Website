@@ -11,11 +11,11 @@ export function Experience() {
       duration: "May 2024 – Aug 2024",
       description: [
         "Built and deployed a full-stack timecard application (Flask REST API + React/TypeScript) to digitize paper-based payroll tracking for a retail business",
-        "Integrated Groq AI to parse scanned handwritten timecards into structured JSON, eliminating manual entry of shift data",
+        "Integrated Llama AI to parse scanned handwritten timecards into structured JSON, eliminating manual entry of shift data",
         "Automated daily/weekly hour calculations, replacing manual tallying and improving payroll preparation speed by ~20%",
         "Designed a human-in-the-loop review workflow where staff could edit parsed entries and trigger instant recalculations"
       ],
-      technologies: ["Flask", "React", "TypeScript", "Groq AI", "Python"]
+      technologies: ["Flask", "React", "TypeScript", "Llama AI", "Python"]
     },
     {
       title: "Software Engineer Intern",
