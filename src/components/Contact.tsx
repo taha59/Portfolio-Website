@@ -78,12 +78,6 @@ export function Contact() {
       href: "https://www.linkedin.com/in/taha-khan-/",
       color: "hover:text-blue-600"
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/alexjohnson",
-      color: "hover:text-blue-400"
-    }
   ];
 
   return (

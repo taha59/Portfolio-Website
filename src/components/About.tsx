@@ -40,15 +40,8 @@ export function About() {
               </p>
               <p className="text-lg text-foreground-muted leading-relaxed mb-6">
                 I specialize in Java, Python, React, Spring Boot, and AWS technologies. What excites me 
-                most about development is the ability to integrate AI and machine learning into practical 
-                applications that solve real business problems, like my timecard automation project that 
-                improved payroll efficiency by 20%.
-              </p>
-              <p className="text-lg text-foreground-muted leading-relaxed">
-                With experience in Agile methodologies and a proven ability to learn quickly and adapt 
-                to new technologies, I'm passionate about collaborative development and building solutions 
-                that make a meaningful impact. I'm AWS Certified and always eager to explore emerging 
-                technologies in cloud computing and artificial intelligence.
+                most about development is the ability to integrate AI into practical 
+                applications that solve real business problems.
               </p>
             </div>
 
